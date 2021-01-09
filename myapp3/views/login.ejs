@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      
+      .root {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=179309799,916882260&fm=26&gp=0.jpg') repeat;
+      }
+      .bgc {
+        
+        display: flex;
+        justify-content: center;
+      }
+      .login-box-bodyWrap{
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+      }
+
+      #put1{
+        margin-left: 10px;
+      }
+      #put2{
+        margin:10px 0px 0px 20px;
+      }
+       
+      button{
+        width: 50px;
+        height: 20px;
+        background: green;
+        margin:10px 0px 10px 66px;
+
+      }
+      a{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="root">
+        <div class="bgc">
+            <h1 class="title">商品管理登录系统</h1>     
+        </div>
+        <div class="login-box-bodyWrap">
+            <div class="login-box-body">
+                <form action="/login/in" method="post">
+                   
+                    用户名:
+           
+                    <input type="text"  placeholder="请输入你的管理员账号" name="username" id="put1">
+                    <br>
+
+                    密   码:
+                      <input type="password"   placeholder="请输入你的管理员密码" name="pass" id="put2">
+                    
+                      <br>
+                      <button type="submit"  >登录</button>
+                      <a href="/register">注册</a>
+                   
+                      
+                </form>
+                <!-- /.social-auth-links -->
+                <a href="/register">如你忘记了密码?? 请联系你的负责人哦~~~</a>
+                 
+              </div>
+        </div>
+        
+      </div>
+    
+  </body>
+</html>
